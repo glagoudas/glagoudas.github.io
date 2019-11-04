@@ -11,9 +11,9 @@ title                    : "Georgia Lagoudas"
 title_separator          : "-"
 name                     : &name "Georgia Lagoudas"
 description              : &description "AAAS Congressional Science & Technology Policy Fellow"
-url                      : "https://glagoudas.github.io" #"http://127.0.0.1:4000"
+url                      : "https://lagoudas.com"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "glagoudas.github.io"
+repository               : "glagoudas/glagoudas.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
