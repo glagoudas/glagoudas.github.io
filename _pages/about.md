@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a Senior Fellow at the Brown University [Pandemic Center] (https://pandemics.sph.brown.edu/) and a member of the faculty at the Brown School of Public Health. I lead a Clean Indoor Air Initiative to reduce disease transmission indoors and make our buildings healthier. I work at the intersection of science, policy, and public health and coordinate with state and federal leaders to advance policies and actions to help us breathe easier. I'm trained as a professional communicator and mediator and have served in policy roles in both the Congressional and Executive Branches.
+I am a Senior Fellow at the Brown University [[Pandemic Center]([url](https://pandemics.sph.brown.edu/))] and a member of the faculty at the Brown School of Public Health. I lead a Clean Indoor Air Initiative to reduce disease transmission indoors and make our buildings healthier. I work at the intersection of science, policy, and public health and coordinate with state and federal leaders to advance policies and actions to help us breathe easier. I'm trained as a professional communicator and mediator and have served in policy roles in both the Congressional and Executive Branches.
 
 I was previously a [AAAS Congressional Science and Engineering Policy
 Fellow](https://www.aaas.org/programs/science-technology-policy-fellowships)
