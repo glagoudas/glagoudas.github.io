@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Georgia Lagoudas"
 title_separator          : "-"
 name                     : &name "Georgia Lagoudas"
-description              : &description "AAAS Congressional Science & Technology Policy Fellow"
+description              : &description "Senior Fellow, Brown University"
 url                      : "http://127.0.0.1:4000"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "glagoudas/glagoudas.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Georgia Lagoudas"
   avatar           : "bio-photo.jpg"
-  bio              : "AAAS Congressional Science & Technology Policy Fellow"
+  bio              : "Senior Fellow, Brown University"
   location         : "Washington, DC"
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=georgia+k+lagoudas"
