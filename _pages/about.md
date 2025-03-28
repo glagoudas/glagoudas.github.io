@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Georgia Lagoudas"
+title: "Georgia Lagoudas, PhD"
 excerpt: "About me"
 author_profile: true
 redirect_from:
