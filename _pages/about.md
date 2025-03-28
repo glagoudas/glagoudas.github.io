@@ -10,7 +10,9 @@ redirect_from:
 
 I'm a scientist, communicator, and motivated citizen. I care about solving
 problems that matter and using data and logic to drive our decisions. I am
-currently a [AAAS Congressional Science and Engineering Policy
+currently a Senior Fellow at the Brown University Pandemic Center and a member of the faculty at the Brown School of Public Health.
+
+I was previously a [AAAS Congressional Science and Engineering Policy
 Fellow](https://www.aaas.org/programs/science-technology-policy-fellowships)
 working in Washington, D.C. as part of [Senator Ed Markey's](https://www.markey.senate.gov/)
 team on [energy and the environment](https://www.markey.senate.gov/priorities/energy-climate-change-and-environment).
