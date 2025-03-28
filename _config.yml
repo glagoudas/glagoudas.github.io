@@ -9,7 +9,7 @@
 locale                   : "en-US"
 title                    : "Georgia Lagoudas"
 title_separator          : "-"
-name                     : &name "Georgia Lagoudas"
+name                     : &name "Georgia Lagoudas, PhD"
 description              : &description "Senior Fellow, Brown University"
 url                      : "https://lagoudas.com"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
