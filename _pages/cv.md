@@ -11,13 +11,23 @@ redirect_from:
 
 ## Policy
 
-*Key policy interests: Nexus of climate change, nutrition, and biotechnology. Other interests: biosecurity, genetic engineering, pandemic preparedness, public health, agriculture, environment, STEM education, emerging technologies.*
+*Key policy interests: biosecurity, public health, biotechnology, pandemic preparedness, food systems. Nexus of nutrition, biotechnology, and sustainability.*
 
-- **AAAS Congressional Science & Engineering Policy Fellow** -- 2019--2020
+- **Senior Fellow, Brown University Pandemic Center** -- 2024--Present
+- **Advisor, Convergent Research** -- 2024
+    - Developed an executive roadmap for launching a nonprofit science startup on indoor air quality (with a focus on farUV light for air disinfection)
+- **Senior Advisor for Biotechnology and Bioeconomy, White House** -- 2021--2023
+    - Drafted and led implementation of the Bioeconomy Executive Order, which launched the National Biotechnology and Biomanufacturing Initiative. Coordinated with a dozen federal agencies and >100 federal staff.
+    - Coordinated the announcement of new funding, research programs, and initiatives from federal agencies on biomanufacturing in conjuction with White House leadership
+    - Launched the White House Clean Indoor Air Initiative to promote cleaner indoor air and building ventilation during the Covid pandemic
+- **Science Officer, U.S. Department of State**, Office of Biological Policy -- 2020--2021
+    - Engaged with foreign partners to promote U.S government position on preventing biological weapons, serving as the main coordinating office for the Biological Weapons Convention (BWC)
+    - Drafted three meeting papers presented at the Sept 2021 BWC Meeting of Experts
+    - Supported the kick-off of a $5 million U.S. project to strengthen BWC national implementation 
+-  **AAAS Congressional Science & Engineering Policy Fellow** -- 2019--2020
+    - Drafted and introduced 3 bills in the U.S. Senate while serving in Senator Markey's office
+    - One bill, the bipartisan Bioeconomy Research and Development Act, became law through the CHIPS and Science Act of 2022 ([pages 235-245](https://www.congress.gov/117/plaws/publ167/PLAW-117publ167.pdf#page=235))
 - **Alumni Relations Officer**, Massachusetts Institute of Technology Science Policy Initiative -- 2014--2017
-    - Created the Alumni Relations Officer position & created database of >100 alumni
-    - Coordinated annual visits to MIT Washington Office, federal science agencies, and Congressional offices
-    - Organized speaker panel at 2017 AAAS Annual Meeting, including the first annual student networking reception
 
 ## Bioengineering & life sciences
 
@@ -32,8 +42,6 @@ redirect_from:
     - Won \$40k for a 1-year research project as principal investigator
     - Mentored 8 undergraduate students with independent research projects
     - Coordinated research with Univ of Calif Irvine doctors and Harvard School of Public Health researchers
-- **Intern** -- Merrimack Pharmaceuticals -- Cambridge, MA -- Fall 2017
-    - Analyzed RNA sequencing data for new drug targets for cancer treatment; collaborated with Research Director
 
 ## Communication & leadership
 
