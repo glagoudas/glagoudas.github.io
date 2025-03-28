@@ -8,16 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-70FX9FCPTE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-70FX9FCPTE');
-</script>
-
 I am a [Senior Fellow](https://pandemics.sph.brown.edu/people/georgia-lagoudas-phd) at the **Brown University [Pandemic Center](https://pandemics.sph.brown.edu/)** and a member of the faculty at the Brown School of Public Health. I lead a Clean Indoor Air Initiative to reduce disease transmission indoors and make our buildings healthier. I work at the intersection of science, policy, and public health and coordinate with state and federal leaders to advance policies and actions to help us breathe easier. I'm trained as a professional communicator and mediator and have served in policy roles in both the Congressional and Executive Branches.
 
 Previously, I served as Senior Advisor for Biotechnology and Bioeconomy at the White House Office of Science and Technology Policy. In this role, I helped lead the drafting and implementation of an Executive Order on Advancing the American Bioeconomy, an effort to generate new jobs, expand domestic supply chains, and enhance our ability to manufacture products with the tools of biotechnology. I also launched a White House Clean Indoor Air Initiative to reduce respiratory disease transmisison, in collaboration with the White House COVID-19 Response Team.
