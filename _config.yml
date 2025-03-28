@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Georgia Lagoudas, PhD"
+title                    : "Georgia Lagoudas"
 title_separator          : "-"
 name                     : &name "Georgia Lagoudas, PhD"
 description              : &description "Senior Fellow, Brown University"
