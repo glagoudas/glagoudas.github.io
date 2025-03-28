@@ -15,9 +15,7 @@ Previously, I served as Senior Advisor for Biotechnology and Bioeconomy at the W
 I was previously a [AAAS Congressional Science and Engineering Policy
 Fellow](https://www.aaas.org/programs/science-technology-policy-fellowships)
 working in Washington, D.C. as part of [Senator Markey's](https://www.markey.senate.gov/)
-team on [energy and the environment](https://www.markey.senate.gov/priorities/energy-climate-change-and-environment).
-
-I worked at DSM, a multinational company that creates products in
+team on [energy and the environment](https://www.markey.senate.gov/priorities/energy-climate-change-and-environment). Before that, I worked at DSM, a multinational company that creates products in
 nutrition, health, and materials. I applied my skills of project management,
 microbial sequencing, and microbiome analysis to help create products that can
 improve animal gut health. Our goal was to reduce the reliance on antibiotics for
