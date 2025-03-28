@@ -8,9 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm a scientist, communicator, and motivated citizen. I care about solving
-problems that matter and using data and logic to drive our decisions. I am
-currently a Senior Fellow at the Brown University Pandemic Center and a member of the faculty at the Brown School of Public Health.
+I am a Senior Fellow at the Brown University [Pandemic Center] (https://pandemics.sph.brown.edu/) and a member of the faculty at the Brown School of Public Health. I lead a Clean Indoor Air Initiative to reduce disease transmission indoors and make our buildings healthier. I work at the intersection of science, policy, and public health and coordinate with state and federal leaders to advance policies and actions to help us breathe easier. I'm trained as a professional communicator and mediator and have served in policy roles in both the Congressional and Executive Branches.
 
 I was previously a [AAAS Congressional Science and Engineering Policy
 Fellow](https://www.aaas.org/programs/science-technology-policy-fellowships)
@@ -23,7 +21,7 @@ microbial sequencing, and microbiome analysis to help create products that can
 improve animal gut health. Our goal was to reduce the use of antibiotics for
 growth promotion in animals.
 
-I completed my Ph.D. in 2018 in [Paul Blainey's lab](http://blainey.mit.edu/)
+I completed my Ph.D. in [Paul Blainey's lab](http://blainey.mit.edu/)
 at MIT and the Broad Institute. I built microfluidic technologies to analyze
 microbial genomes, and I used DNA sequencing to study antibiotic resistance. I
 have experience in genomic sequencing, microfluidics, microbiology, and
