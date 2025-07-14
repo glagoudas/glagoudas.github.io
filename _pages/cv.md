@@ -45,6 +45,9 @@ redirect_from:
 
 ## Communication & leadership
 
+- **Outdoor Leadership Instructor** -- National Outdoor Leadership School (NOLS) -- Lander, WY -- 2021--Present
+    - As a certified Instructor, lead backpacking expeditions with young students and adults to teach curriculum of wilderness skills, leadership, risk management, communication, and environmental studies (have instructed 6 courses as of 2025)
+    - Selected from competitive application cycle to complete the Instructor Training Course, a 21-day backpacking expedition to build leadership and wilderness skills
 - **Communication Fellow** -- Massachusetts Institute of Technology -- Cambridge, MA -- 2014--2016
     - Coached >50 student-clients on scientific writing and presentations over 150 hours
 - **Co-founder** -- Massachusetts Institute of Technology conflict management & peer coaching program -- 2014--2018
