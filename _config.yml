@@ -81,12 +81,12 @@ analytics:
 # Site Author
 author:
   name             : "Georgia Lagoudas, PhD"
-  avatar           : "bio-photo.jpg"
+  avatar           : "Headshot-Georgia-1.jpeg"
   bio              : "Senior Fellow, Brown University"
   location         : "Washington, DC"
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=georgia+k+lagoudas"
-  googlescholar    : #"http://yourfullgooglescholarurl.com"
+  googlescholar    : "https://scholar.google.com/citations?user=EBllt-8AAAAJ&hl=en"
   email            :
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
