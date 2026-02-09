@@ -38,7 +38,8 @@ I have 5+ years of coaching and mentoring students, and I served as a
 [Communication Fellow](https://mitcommlab.mit.edu/) at MIT.
 
 
-
+--
+<br>
 
 _**Short bio:**_
 
