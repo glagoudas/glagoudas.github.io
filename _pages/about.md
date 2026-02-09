@@ -48,5 +48,3 @@ Dr. Georgia Lagoudas is a Senior Fellow and faculty at the Pandemic Center at Br
 She previously worked at the U.S. Department of State and the U.S. Senate as a AAAS Science and Technology Policy Fellow. In the Senate, she led the writing and introduction of a bill that became law through the CHIPS and Science Act of 2022, advancing biotechnology research. Georgia completed her PhD in Biological Engineering from MIT.
 
 A head shot can be downloaded <a href="images/Headshot-Georgia-Lagoudas.jpeg" download="Georgia_Lagoudas_Headshot.jpeg">here</a>.
-
-A head shot can be downloaded <a href="images/Georgia-Lagoudas-Headshot.zip">here</a>.
