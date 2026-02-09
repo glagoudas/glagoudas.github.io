@@ -24,8 +24,9 @@ Previously, I served as Senior Advisor for Biotechnology and Bioeconomy at the W
 I was previously a [AAAS Congressional Science and Engineering Policy
 Fellow](https://www.aaas.org/programs/science-technology-policy-fellowships)
 working in Washington, D.C. as part of [Senator Markey's](https://www.markey.senate.gov/)
-team on [energy and the environment](https://www.markey.senate.gov/priorities/energy-climate-change-and-environment). Before that, I worked at DSM, a multinational company that creates products in nutrition, health, and materials. I applied my skills of project management,
-microbial sequencing, and microbiome analysis to help create products that can
+team on [energy and the environment](https://www.markey.senate.gov/priorities/energy-climate-change-and-environment). I led the writing and introduction of 3 bills, including one that became law through the CHIPS and Science Act of 2022 ([Bioeconomy Research and Development Act](https://www.congress.gov/bill/117th-congress/house-bill/4346/text#:~:text=TITLE%20IV%E2%80%94BIOECONOMY%20RESEARCH%20AND%20DEVELOPMENT)), advancing biotechnology research.  I also served as a AAAS Science & Tech Policy Fellow in the U.S. Department of State working on international biological policy and the prevention of biological weapons. 
+
+Before that, I worked at DSM, a multinational company that creates products in nutrition, health, and materials. I applied my skills of project management, microbial sequencing, and microbiome analysis to help create products that can
 improve animal gut health. Our goal was to reduce the reliance on antibiotics for
 growth promotion in animals.
 
@@ -37,3 +38,11 @@ bioinformatics.
 
 I have 5+ years of coaching and mentoring students, and I served as a
 [Communication Fellow](https://mitcommlab.mit.edu/) at MIT.
+
+
+
+Short bio:
+Dr. Georgia Lagoudas is a Senior Fellow and faculty at the Pandemic Center at Brown University’s School of Public Health, where she brings extensive expertise in biosecurity, pandemic response, and indoor air quality. She leads the [Clean Indoor Air Initiative](https://pandemics.sph.brown.edu/our-work/clean-indoor-air-initiative) at Brown University, advancing policy and implementation projects to improve indoor air quality and reduce disease transmission. Prior to this role, she served as Senior Advisor for Biotechnology and Bioeconomy at the White House Office of Science and Technology Policy. She led the drafting and implementation of the Executive Order on Advancing the American Bioeconomy and launched a White House Initiative to improve indoor air quality, helping to position clean indoor air as a core component of national health and resilience strategy. She coordinated the federal government’s effort to advance clean indoor air to reduce disease transmission during the COVID pandemic.
+
+She previously worked at the U.S. Department of State and the U.S. Senate as a AAAS Science and Technology Policy Fellow. In the Senate, she led the writing and introduction of a bill that became law through the CHIPS and Science Act of 2022, advancing biotechnology research. Georgia completed her PhD in Biological Engineering from MIT.
+
