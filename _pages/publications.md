@@ -4,6 +4,7 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
+**Lagoudas GK**, Chwalek SM, Kopp N, Wentzel JM, Snyder BC, Allen JG, and Cameron EE. Federal and State Policy Opportunities to Improve Indoor Air Quality. _Health Security_, 2026. doi:10.1177/23265094251410880
 
 Trounce M, Anderson D, Bates L, […] **Lagoudas GK**, […] Morawska L. Paradigm shifts in indoor air quality: Insights from the 2025 Stanford forum on sustainable and healthy buildings. *Building and Environment*. 2026. doi.org/10.1016/j.buildenv.2025.114152
 
