@@ -39,11 +39,11 @@ I have 5+ years of coaching and mentoring students, and I served as a
 
 
 
+
 _**Short bio:**_
 
-Dr. Georgia Lagoudas is a Senior Fellow and faculty at the Pandemic Center at Brown University’s School of Public Health, where she brings extensive expertise in biosecurity, pandemic response, and indoor air quality. She leads the [Clean Indoor Air Initiative](https://pandemics.sph.brown.edu/our-work/clean-indoor-air-initiative) at Brown University, advancing policy and implementation projects to improve indoor air quality and reduce disease transmission. Prior to this role, she served as Senior Advisor for Biotechnology and Bioeconomy at the White House Office of Science and Technology Policy. She led the drafting and implementation of the Executive Order on Advancing the American Bioeconomy and launched a White House Initiative to improve indoor air quality, helping to position clean indoor air as a core component of national health and resilience strategy. She coordinated the federal government’s effort to advance clean indoor air to reduce disease transmission during the COVID pandemic.
+Dr. Georgia Lagoudas is a Senior Fellow and faculty at the Pandemic Center at Brown University’s School of Public Health, where she brings extensive expertise in biosecurity, pandemic response, and indoor air quality. She leads the [Clean Indoor Air Initiative](https://pandemics.sph.brown.edu/our-work/clean-indoor-air-initiative) at Brown University, advancing policy and implementation projects to improve indoor air quality and reduce disease transmission. Prior to this role, she served as Senior Advisor for Biotechnology at the White House Office of Science and Technology Policy. She led the drafting and implementation of the Executive Order on Advancing the American Bioeconomy and launched a White House Initiative to improve indoor air quality, helping to position clean indoor air as a core component of national health and resilience strategy. She coordinated the federal government’s effort to advance clean indoor air to reduce disease transmission during the COVID pandemic.
 
 She previously worked at the U.S. Department of State and the U.S. Senate as a AAAS Science and Technology Policy Fellow. In the Senate, she led the writing and introduction of a bill that became law through the CHIPS and Science Act of 2022, advancing biotechnology research. Georgia completed her PhD in Biological Engineering from MIT.
 
-Head shot: 
-
+Head shot can be downloaded [here](https://github.com/glagoudas/glagoudas.github.io/blob/ec1a834943ecb4d0ed4972ea0502781040fa9fa5/images/Headshot-Georgia-1.jpeg).
