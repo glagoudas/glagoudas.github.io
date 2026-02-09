@@ -5,6 +5,10 @@ permalink: /publications/
 author_profile: true
 ---
 
+Trounce M, Anderson D, Bates L, […] **Lagoudas GK**, […] Morawska L. Paradigm shifts in indoor air quality: Insights from the 2025 Stanford forum on sustainable and healthy buildings. *Building and Environment*. 2026. doi.org/10.1016/j.buildenv.2025.114152
+
+Baier RR, **Lagoudas GK**. Letter in response to “Multisociety Guidance for Infection Prevention and Control in Nursing Homes.” *Infection Control & Hospital Epidemiology*. 2026:1-1. doi:10.1017/ice.2026.10395
+
 Järvenpää M, Sater MRA, **Lagoudas GK**, Blainey PC, Miller LG, McKinnell JA, Huang SS, Grad YH, Marttinen P. A Bayesian model of acquisition and clearance of bacterial colonization incorporating within-host variation. *PLoS Comput Biol* 2019 15(4):e1006534. PMID:31009452
 
 Jin C, **Lagoudas GK**, Zhao C, Bullman S, Bhutkar A, Hu B, Ameh S, Sandel D, Liang XS, Mazzilli S, Whary MT, Meyerson M, Germain R, Blainey PC, Fox JG, Jacks T. Commensal Microbiota Promote Lung Cancer Development via γδ T Cells. *Cell* 2019 176(5):998-1013.e16. PMID:30712876
