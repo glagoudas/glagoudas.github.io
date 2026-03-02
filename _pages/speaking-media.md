@@ -8,7 +8,7 @@ author_profile: true
 {% include base_path %}
 
 ## Speaking (Selected)
-- [IWBI Healthy Building Policy Summit](https://resources.wellcertified.com/press-releases/iwbi-s-national-policy-summit-charts-the-future-of-healthy-buildings/) – Panel Speaker for “A National Opportunity for Action: Unlocking Policy Solutions to Accelerate Healthy Indoor Air”, September 29, 2025 (Washington, DC)
+- "A National Opportunity for Action: Unlocking Policy Solutions to Accelerate Healthy Indoor Air" - [International WELL Building Institute Healthy Building Policy Summit](https://resources.wellcertified.com/press-releases/iwbi-s-national-policy-summit-charts-the-future-of-healthy-buildings/), September 2025 (Washington, DC)
 - “State Clean Indoor Air Guide: A New Resource from the State Clean Indoor Air Collaborative” - Workshop for Indoor Air Quality State Officials hosted by the Environmental Law Institute – September 2025 (Washington, DC)
 
 ## Convenings (Selected)
@@ -22,15 +22,12 @@ author_profile: true
 - **Air Health, Our Health** — *“Beat the 10% Brain Tax – Indoor CO₂ & You”*  
   March 2, 2026  
   [Listen here](https://creators.spotify.com/pod/profile/airhealthourhealth/episodes/Beat-the-10-Brain-Tax--Indoor-CO2--You-e3fodog)
-
 - **Volts Podcast (David Roberts)** — *“What’s the deal with indoor air quality?”*  
   November 19, 2025  
   [Listen here](https://www.volts.wtf/p/whats-the-deal-with-indoor-air-quality)
-
 - **A Moment in Health (Ashish Jha)** — *“Why Should We Care About Indoor Air Quality?”*  
   December 1, 2025  
   [Listen here](https://podcasts.apple.com/us/podcast/why-should-we-care-about-indoor-air-quality/id1808746542?i=1000738306117)
-
 - **Air Quality Matters (Simon Jones)** — *“Inside the UN's Historic Indoor Air Quality Pledge with Georgia Lagoudas & Bronwyn King”*  
   November 10, 2025  
   [Listen here](https://podcasts.apple.com/us/podcast/97-inside-the-uns-historic-indoor-air-quality-pledge/id1713746775?i=1000736115663)
@@ -38,16 +35,5 @@ author_profile: true
 
 ## Media kit
 - [Short bio](/files/Georgia_Lagoudas_Short_Bio.pdf)
-- [Headshot](href="images/Headshot-Georgia-Lagoudas.jpeg" download="Georgia_Lagoudas_Headshot.jpeg")
-
-- <a href="/images/Headshot-Georgia-Lagoudas.jpeg" download>Download Headshot</a>
-A head shot can be downloaded <a href="images/Headshot-Georgia-Lagoudas.jpeg" download="Georgia_Lagoudas_Headshot.jpeg">here</a>.
-
-_**Short bio:**_
-
-Dr. Georgia Lagoudas is a Senior Fellow and faculty at the Pandemic Center at Brown University’s School of Public Health, where she brings extensive expertise in biosecurity, pandemic response, and indoor air quality. She leads the [Clean Indoor Air Initiative](https://pandemics.sph.brown.edu/our-work/clean-indoor-air-initiative) at Brown University, advancing policy and implementation projects to improve indoor air quality and reduce disease transmission. Prior to this role, she served as Senior Advisor for Biotechnology at the White House Office of Science and Technology Policy. She led the drafting and implementation of the Executive Order on Advancing the American Bioeconomy and launched a White House Initiative to improve indoor air quality, helping to position clean indoor air as a core component of national health and resilience strategy. She coordinated the federal government’s effort to advance clean indoor air to reduce disease transmission during the COVID pandemic.
-
-She previously worked at the U.S. Department of State and the U.S. Senate as a AAAS Science and Technology Policy Fellow. In the Senate, she led the writing and introduction of a bill that became law through the CHIPS and Science Act of 2022, advancing biotechnology research. Georgia completed her PhD in Biological Engineering from MIT.
-
-A head shot can be downloaded <a href="images/Headshot-Georgia-Lagoudas.jpeg" download="Georgia_Lagoudas_Headshot.jpeg">here</a>.
+- <a href="/images/Headshot-Georgia-Lagoudas.jpeg" download>Headshot</a>
 
