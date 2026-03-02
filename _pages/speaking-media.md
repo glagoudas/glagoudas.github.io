@@ -37,11 +37,11 @@ author_profile: true
 
 
 ## Media kit
-- [Short bio](#)
+- [Short bio](/files/Georgia_Lagoudas_Short_Bio.pdf)
 - [Headshot](href="images/Headshot-Georgia-Lagoudas.jpeg" download="Georgia_Lagoudas_Headshot.jpeg")
 
-- [Short Bio](/files/Georgia_Lagoudas_Short_Bio.pdf)
 - <a href="/images/Headshot-Georgia-Lagoudas.jpeg" download>Download Headshot</a>
+A head shot can be downloaded <a href="images/Headshot-Georgia-Lagoudas.jpeg" download="Georgia_Lagoudas_Headshot.jpeg">here</a>.
 
 _**Short bio:**_
 
