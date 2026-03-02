@@ -38,4 +38,16 @@ author_profile: true
 
 ## Media kit
 - [Short bio](#)
-- [Headshots](#)
+- [Headshot](href="images/Headshot-Georgia-Lagoudas.jpeg" download="Georgia_Lagoudas_Headshot.jpeg")
+
+- [Short Bio](/files/Georgia_Lagoudas_Short_Bio.pdf)
+- <a href="/images/Headshot-Georgia-Lagoudas.jpeg" download>Download Headshot</a>
+
+_**Short bio:**_
+
+Dr. Georgia Lagoudas is a Senior Fellow and faculty at the Pandemic Center at Brown University’s School of Public Health, where she brings extensive expertise in biosecurity, pandemic response, and indoor air quality. She leads the [Clean Indoor Air Initiative](https://pandemics.sph.brown.edu/our-work/clean-indoor-air-initiative) at Brown University, advancing policy and implementation projects to improve indoor air quality and reduce disease transmission. Prior to this role, she served as Senior Advisor for Biotechnology at the White House Office of Science and Technology Policy. She led the drafting and implementation of the Executive Order on Advancing the American Bioeconomy and launched a White House Initiative to improve indoor air quality, helping to position clean indoor air as a core component of national health and resilience strategy. She coordinated the federal government’s effort to advance clean indoor air to reduce disease transmission during the COVID pandemic.
+
+She previously worked at the U.S. Department of State and the U.S. Senate as a AAAS Science and Technology Policy Fellow. In the Senate, she led the writing and introduction of a bill that became law through the CHIPS and Science Act of 2022, advancing biotechnology research. Georgia completed her PhD in Biological Engineering from MIT.
+
+A head shot can be downloaded <a href="images/Headshot-Georgia-Lagoudas.jpeg" download="Georgia_Lagoudas_Headshot.jpeg">here</a>.
+
