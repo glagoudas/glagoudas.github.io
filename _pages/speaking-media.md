@@ -13,8 +13,8 @@ author_profile: true
 
 ## Convenings (Selected)
 - *Healthy Indoor Air: A Global Call to Action* — United Nations General Assembly Side Event, New York City — September 2025 [(airclub.org)](airclub.org)
-  - [Short video summary:](https://youtu.be/BKgSSc-vB6o)
-  - [Full event recording:](https://webtv.un.org/en/asset/k1v/k1vv2t3bma)
+  - [Short video summary](https://youtu.be/BKgSSc-vB6o)
+  - [Full event recording](https://webtv.un.org/en/asset/k1v/k1vv2t3bma)
 - *Stanford Clean Indoor Air Forum* - Stanford University, Palo Alto, California - April 2025 ([summary of event](https://med.stanford.edu/content/dam/sm/biosecurity/documents/Stanford-Clean-Air-PSummit-proceedings.pdf))
 
 ## 🎙️ Podcasts
