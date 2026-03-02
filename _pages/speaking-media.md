@@ -39,4 +39,3 @@ author_profile: true
 ## Media kit
 - [Short bio](#)
 - [Headshots](#)
-- [One-pager](#)
