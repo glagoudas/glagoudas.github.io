@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CO₂ & Infection Risk — Wells-Riley Model</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@300;400;600&display=swap');
+
+  :root {
+    --bg: #0d0f14;
+    --surface: #13161e;
+    --border: #1e2230;
+    --red: #e8453c;
+    --purple: #a78bfa;
+    --text: #d4d8e2;
+    --muted: #5a607a;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'IBM Plex Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 36px 20px 52px;
+  }
+
+  header {
+    width: 100%;
+    max-width: 980px;
+    margin-bottom: 28px;
+  }
+
+  .eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-weight: 300;
+    font-size: clamp(20px, 3.5vw, 27px);
+    line-height: 1.25;
+    color: #f0f2f8;
+  }
+  h1 strong { font-weight: 600; }
+
+  .subtitle {
+    margin-top: 9px;
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.65;
+    max-width: 740px;
+  }
+
+  .charts-grid {
+    width: 100%;
+    max-width: 980px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  @media (max-width: 700px) {
+    .charts-grid { grid-template-columns: 1fr; }
+  }
+
+  .chart-wrap {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 20px 20px 16px;
+  }
+
+  .chart-title {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+  }
+  .chart-title.covid { color: var(--purple); }
+  .chart-title.flu   { color: var(--red); }
+
+  .chart-sub {
+    font-size: 11px;
+    color: var(--muted);
+    font-family: 'IBM Plex Mono', monospace;
+    margin-bottom: 14px;
+  }
+
+  .chart-container {
+    position: relative;
+    height: 370px;
+  }
+
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 14px;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 11px;
+    color: var(--muted);
+    font-family: 'IBM Plex Mono', monospace;
+  }
+
+  .leg-solid {
+    width: 24px; height: 2.5px; border-radius: 1px; flex-shrink: 0;
+  }
+  .leg-dashed {
+    width: 24px; height: 0;
+    border-top: 2px dashed;
+    opacity: 0.6;
+    flex-shrink: 0;
+  }
+
+  .params {
+    width: 100%;
+    max-width: 980px;
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(148px, 1fr));
+    gap: 1px;
+    border: 1px solid var(--border);
+    background: var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .param {
+    background: var(--surface);
+    padding: 12px 15px;
+  }
+
+  .param-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+
+  .param-value {
+    font-size: 13px;
+    font-weight: 600;
+    color: #f0f2f8;
+  }
+
+  .param-sub {
+    font-size: 10px;
+    color: var(--muted);
+    margin-top: 2px;
+    line-height: 1.4;
+  }
+
+  .note {
+    width: 100%;
+    max-width: 980px;
+    margin-top: 14px;
+    font-size: 10.5px;
+    color: var(--muted);
+    line-height: 1.8;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  .note span { color: #7a8099; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="eyebrow">Wells-Riley Airborne Transmission Model</div>
+  <h1>Indoor CO₂ &amp; <strong>Expected Infections</strong><br>COVID-19 vs Influenza</h1>
+  <p class="subtitle">
+    60 people, 1 infectious person, 4-hour exposure. Each person talks ~2.5 minutes total; quiet and seated otherwise.
+    Quanta emission rates are time-weighted averages of talking and resting.
+  </p>
+</header>
+
+<div class="charts-grid">
+
+  <div class="chart-wrap">
+    <div class="chart-title covid">COVID-19 (SARS-CoV-2)</div>
+    <div class="chart-sub">q&#x0305; = 28.4 q/hr &nbsp;·&nbsp; CI: 14.2 – 56.8 q/hr</div>
+    <div class="chart-container">
+      <canvas id="covidChart"></canvas>
+    </div>
+    <div class="legend">
+      <div class="legend-item">
+        <div class="leg-solid" style="background:#a78bfa;"></div>
+        Central estimate
+      </div>
+      <div class="legend-item">
+        <div class="leg-dashed" style="border-color:#a78bfa;"></div>
+        95% confidence interval
+      </div>
+    </div>
+  </div>
+
+  <div class="chart-wrap">
+    <div class="chart-title flu">Influenza</div>
+    <div class="chart-sub">q&#x0305; = 13.6 q/hr &nbsp;·&nbsp; CI: 7.1 – 21.5 q/hr</div>
+    <div class="chart-container">
+      <canvas id="fluChart"></canvas>
+    </div>
+    <div class="legend">
+      <div class="legend-item">
+        <div class="leg-solid" style="background:#e8453c;"></div>
+        Central estimate
+      </div>
+      <div class="legend-item">
+        <div class="leg-dashed" style="border-color:#e8453c;"></div>
+        95% confidence interval
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="params">
+  <div class="param">
+    <div class="param-label">Occupants</div>
+    <div class="param-value">60</div>
+    <div class="param-sub">1 infector · 59 susceptible</div>
+  </div>
+  <div class="param">
+    <div class="param-label">Exposure Time</div>
+    <div class="param-value">4 hours</div>
+    <div class="param-sub">Continuous shared room</div>
+  </div>
+  <div class="param">
+    <div class="param-label">Activity Mix</div>
+    <div class="param-value">~1% talking</div>
+    <div class="param-sub">2.5 min talk / 237.5 min quiet</div>
+  </div>
+  <div class="param">
+    <div class="param-label">COVID q (central)</div>
+    <div class="param-value">28.4 q/hr</div>
+    <div class="param-sub">25 rest + 330 talk, weighted</div>
+  </div>
+  <div class="param">
+    <div class="param-label">Flu q (central)</div>
+    <div class="param-value">13.6 q/hr</div>
+    <div class="param-sub">13 rest + 72 talk, weighted</div>
+  </div>
+  <div class="param">
+    <div class="param-label">Breathing Rate</div>
+    <div class="param-value">0.30 m³/hr</div>
+    <div class="param-sub">Sedentary / seated</div>
+  </div>
+  <div class="param">
+    <div class="param-label">Outdoor CO₂</div>
+    <div class="param-value">420 ppm</div>
+    <div class="param-sub">Background ambient</div>
+  </div>
+</div>
+
+<div class="note">
+  <span>MODEL:</span> P = 1 − exp(−I·q·p·t / Q) &nbsp;|&nbsp;
+  <span>VENTILATION:</span> Q = n · 0.018 m³/hr / ΔPPM (fraction) &nbsp;|&nbsp;
+  <span>QUANTA SOURCES:</span> Buonanno et al. 2020; Miller et al. 2021; Prentiss et al. 2022 &nbsp;|&nbsp;
+  <span>CI:</span> ×0.5 / ×2 on central q — reflects strain, individual &amp; measurement uncertainty. Not clinical guidance.
+</div>
+
+<script>
+// ═══════════════════════════════════════════════
+// PARAMETERS
+// ═══════════════════════════════════════════════
+const N_TOTAL  = 60;
+const N_SUSCEP = 59;
+const T        = 4;
+const P_BREATH = 0.30;
+const CO2_OUT  = 420;
+const CO2_PROD = 0.018;
+
+const F_TALK  = 2.5 / 240;
+const F_QUIET = 1 - F_TALK;
+
+// Quanta (q/hr) — literature
+const COV_REST = 25,  COV_TALK = 330;
+const FLU_REST = 13,  FLU_TALK = 72;
+
+const COV_MID  = F_QUIET * COV_REST + F_TALK * COV_TALK;   // 28.38
+const COV_LOW  = COV_MID * 0.50;
+const COV_HIGH = COV_MID * 2.00;
+
+const FLU_MID  = F_QUIET * FLU_REST + F_TALK * FLU_TALK;   // 13.62
+const FLU_LOW  = FLU_MID * 0.52;
+const FLU_HIGH = FLU_MID * 1.58;
+
+// ═══════════════════════════════════════════════
+// CALCULATION
+// ═══════════════════════════════════════════════
+function calc(ppm, q) {
+  const d = ppm - CO2_OUT;
+  if (d <= 0) return 0;
+  const Q = (N_TOTAL * CO2_PROD) / (d / 1e6);
+  return Math.min(N_SUSCEP * (1 - Math.exp(-(q * P_BREATH * T) / Q)), N_SUSCEP);
+}
+
+// ═══════════════════════════════════════════════
+// DATA GENERATION
+// ═══════════════════════════════════════════════
+const labels = [];
+const cMid = [], cLow = [], cHigh = [];
+const fMid = [], fLow = [], fHigh = [];
+
+for (let ppm = 450; ppm <= 6000; ppm += 5) {
+  labels.push(ppm);
+  cMid.push(+calc(ppm, COV_MID).toFixed(3));
+  cLow.push(+calc(ppm, COV_LOW).toFixed(3));
+  cHigh.push(+calc(ppm, COV_HIGH).toFixed(3));
+  fMid.push(+calc(ppm, FLU_MID).toFixed(3));
+  fLow.push(+calc(ppm, FLU_LOW).toFixed(3));
+  fHigh.push(+calc(ppm, FLU_HIGH).toFixed(3));
+}
+
+// ═══════════════════════════════════════════════
+// REF-LINES PLUGIN
+// ═══════════════════════════════════════════════
+const refLinesPlugin = {
+  id: 'refLines',
+  afterDraw(chart) {
+    const { ctx, chartArea: ca, scales: { x } } = chart;
+    const REFS = [
+      { ppm: 800,  top: '800 ppm',   lines: ['Health-based','scientist guidelines'], color: '#5b9cf6', bg: 'rgba(91,156,246,0.11)', offset: 0   },
+      { ppm: 1000, top: '1,000 ppm', lines: ['Health Canada','& US EPA'],            color: '#4ade80', bg: 'rgba(74,222,128,0.11)', offset: 50  },
+      { ppm: 2000, top: '2,000 ppm', lines: ['Poor','ventilation'],                  color: '#f5a623', bg: 'rgba(245,166,35,0.11)',  offset: 100 },
+    ];
+    ctx.save();
+    REFS.forEach(ref => {
+      const xPos = x.getPixelForValue(ref.ppm);
+      if (xPos < ca.left || xPos > ca.right) return;
+
+      const padX = 7, padY = 4, fs = 9.5, lh = fs + 5;
+      const allLines = [ref.top, ...ref.lines];
+      ctx.font = `600 ${fs}px 'IBM Plex Mono', monospace`;
+      let maxW = ctx.measureText(ref.top).width;
+      ctx.font = `400 ${fs - 0.5}px 'IBM Plex Mono', monospace`;
+      ref.lines.forEach(l => { maxW = Math.max(maxW, ctx.measureText(l).width); });
+      const boxW = maxW + padX * 2;
+      const boxH = lh * allLines.length + padY * 2;
+      let bx = xPos - boxW / 2;
+      bx = Math.max(ca.left + 2, Math.min(bx, ca.right - boxW - 2));
+      const by = ca.top + 3 + ref.offset;
+
+      // vertical dashed line
+      ctx.beginPath();
+      ctx.setLineDash([4, 6]);
+      ctx.strokeStyle = ref.color;
+      ctx.lineWidth = 1.5;
+      ctx.globalAlpha = 0.38;
+      ctx.moveTo(xPos, by + boxH);
+      ctx.lineTo(xPos, ca.bottom);
+      ctx.stroke();
+      ctx.setLineDash([]);
+      ctx.globalAlpha = 1;
+
+      // pill
+      ctx.fillStyle = ref.bg;
+      ctx.beginPath();
+      ctx.roundRect(bx, by, boxW, boxH, 4);
+      ctx.fill();
+      ctx.strokeStyle = ref.color;
+      ctx.lineWidth = 1;
+      ctx.globalAlpha = 0.42;
+      ctx.stroke();
+      ctx.globalAlpha = 1;
+
+      // text
+      ctx.textAlign = 'center';
+      ctx.fillStyle = ref.color;
+      allLines.forEach((line, i) => {
+        if (i === 0) ctx.font = `600 ${fs}px 'IBM Plex Mono', monospace`;
+        else { ctx.font = `400 ${fs - 0.5}px 'IBM Plex Mono', monospace`; ctx.globalAlpha = 0.72; }
+        ctx.fillText(line, bx + boxW / 2, by + padY + fs + lh * i);
+      });
+      ctx.globalAlpha = 1;
+    });
+    ctx.restore();
+  }
+};
+
+// ═══════════════════════════════════════════════
+// CHART FACTORY
+// ═══════════════════════════════════════════════
+function buildChart(id, midData, lowData, highData, color, tooltipQs, yMax) {
+  const cvs = document.getElementById(id).getContext('2d');
+  const ciColor = color + 'aa'; // semi-transparent version via hex alpha
+
+  new Chart(cvs, {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [
+        // upper CI — fills down to lower CI (index +2)
+        {
+          data: highData,
+          borderColor: color + '77',
+          borderWidth: 1.5,
+          borderDash: [5, 5],
+          pointRadius: 0,
+          fill: '+2',
+          backgroundColor: color + '14',
+          tension: 0.4,
+          order: 3,
+        },
+        // central
+        {
+          data: midData,
+          borderColor: color,
+          borderWidth: 2.5,
+          pointRadius: 0,
+          fill: false,
+          tension: 0.4,
+          order: 1,
+        },
+        // lower CI
+        {
+          data: lowData,
+          borderColor: color + '77',
+          borderWidth: 1.5,
+          borderDash: [5, 5],
+          pointRadius: 0,
+          fill: false,
+          tension: 0.4,
+          order: 3,
+        },
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: '#13161e',
+          borderColor: '#1e2230',
+          borderWidth: 1,
+          titleColor: '#d4d8e2',
+          bodyColor: '#7a8099',
+          titleFont: { family: "'IBM Plex Mono', monospace", size: 11 },
+          bodyFont:  { family: "'IBM Plex Mono', monospace", size: 11 },
+          padding: 12,
+          callbacks: {
+            title: items => `CO₂: ${Number(items[0].label).toLocaleString()} ppm`,
+            label: item => {
+              const names = ['Upper CI', 'Central', 'Lower CI'];
+              return ` ${names[item.datasetIndex]} (q=${tooltipQs[item.datasetIndex]}): ${item.raw.toFixed(1)} persons`;
+            }
+          }
+        }
+      },
+      scales: {
+        x: {
+          type: 'linear', min: 450, max: 6000,
+          title: {
+            display: true,
+            text: 'Indoor CO₂ concentration (ppm)',
+            color: '#5a607a',
+            font: { family: "'IBM Plex Mono', monospace", size: 10 },
+            padding: { top: 10 }
+          },
+          ticks: {
+            color: '#5a607a',
+            font: { family: "'IBM Plex Mono', monospace", size: 9 },
+            maxTicksLimit: 8,
+            callback: v => v.toLocaleString()
+          },
+          grid: { color: '#1a1d28' },
+          border: { color: '#1e2230' }
+        },
+        y: {
+          min: 0, max: yMax,
+          title: {
+            display: true,
+            text: 'Expected infections (of 59 susceptible)',
+            color: '#5a607a',
+            font: { family: "'IBM Plex Mono', monospace", size: 10 },
+            padding: { right: 10 }
+          },
+          ticks: {
+            color: '#5a607a',
+            font: { family: "'IBM Plex Mono', monospace", size: 9 },
+            stepSize: 5,
+            callback: v => v
+          },
+          grid: { color: '#1a1d28' },
+          border: { color: '#1e2230' }
+        }
+      }
+    },
+    plugins: [refLinesPlugin]
+  });
+}
+
+buildChart(
+  'covidChart', cMid, cLow, cHigh, '#a78bfa',
+  [COV_HIGH.toFixed(1), COV_MID.toFixed(1), COV_LOW.toFixed(1)], 20
+);
+
+buildChart(
+  'fluChart', fMid, fLow, fHigh, '#e8453c',
+  [FLU_HIGH.toFixed(1), FLU_MID.toFixed(1), FLU_LOW.toFixed(1)], 15
+);
+</script>
+</body>
+</html>
