@@ -4,6 +4,8 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
+**Lagoudas GK**, Ananthasekar S, Culp P, and Wargocki P. Integrating health and indoor air quality into European building policy: A landmark policy shift. _Building and Environment_, 2026. [doi:10.1016/j.buildenv.2026.114518](https://doi.org/10.1016/j.buildenv.2026.114518) \| <a href="/pdfs/lagoudas-2026-european-building-policy.pdf" download>Download PDF</a>
+
 **Lagoudas GK**, Chwalek SM, Kopp N, Wentzel JM, Snyder BC, Allen JG, and Cameron EE. Federal and State Policy Opportunities to Improve Indoor Air Quality. _Health Security_, 2026. 
 [https://doi.org/10.1177/23265094251410880](https://doi.org/10.1177/23265094251410880) | [Download PDF](files/lagoudas-2026-policy-opportunities-iaq.pdf)
 <a href="files/lagoudas-2026-policy-opportunities-iaq.pdf" download>Download PDF</a>
