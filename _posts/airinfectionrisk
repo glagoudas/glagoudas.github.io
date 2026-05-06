@@ -15,3 +15,14 @@ The takeaway from that hearing room: at 6,000 ppm, with 60 people and one infect
 _Model inputs and assumptions_
 
 The model assumes a room of 60 occupants (1 infectious, 59 susceptible) sharing air for four hours, with each person talking for approximately 2.5 minutes and seated quietly otherwise. Breathing rate is set at 0.30 m³/hr, consistent with light sedentary activity. Ventilation is derived directly from CO₂ concentration: each person produces approximately 18 litres of CO₂ per hour, and the steady-state excess above outdoor background (420 ppm) is used to back-calculate total room airflow. Quanta emission rates — the currency of the Wells-Riley model — are time-weighted averages of resting and talking emission, drawn from Buonanno et al. (2020) and Miller et al. (2021): 28.4 quanta/hr for COVID-19 and 13.6 quanta/hr for influenza at the central estimate. Confidence intervals reflect a ×0.5 to ×2 range on the central quanta value, capturing uncertainty across pathogen strains, individual variation, and measurement methodology. The model does not account for masking, room geometry, near-field exposure, or variation in susceptibility.
+
+[View the interactive infection risk model here](/files/co2_infection_risk-2026.html)
+
+
+<iframe 
+  src="/files/co2_infection_risk-2026.html" 
+  width="100%" 
+  height="750px" 
+  frameborder="0"
+  style="border: none;">
+</iframe>
