@@ -4,6 +4,8 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
+Ananthasekar S and **Lagoudas GK**. An indoor air quality policy maturity framework: Global exemplars and governance pathways. _Indoor Environments_, 2026. [doi.org/10.1016/j.indenv.2026.10019](https://doi.org/10.1016/j.indenv.2026.10019) \| [Download PDF](/files/IndoorEnvir-IAQPolicyMaturityFramework.pdf)
+
 **Lagoudas GK**, Ananthasekar S, Culp P, and Wargocki P. Integrating health and indoor air quality into European building policy: A landmark policy shift. _Building and Environment_, 2026. [doi:10.1016/j.buildenv.2026.114508](https://doi.org/10.1016/j.buildenv.2026.114508) \| [Download PDF](/files/Lagoudas-EuropeanBuildingPolicy-IAQ-2026.pdf)
 
 **Lagoudas GK**, Chwalek SM, Kopp N, Wentzel JM, Snyder BC, Allen JG, and Cameron EE. Federal and State Policy Opportunities to Improve Indoor Air Quality. _Health Security_, 2026. 
